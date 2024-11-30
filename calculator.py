@@ -1,8 +1,11 @@
 def main():
-    x=int(input("Enter a number:"))
-    y=int(input("Enter another number:"))
-    op=input("Enter a operation:")
-    print(f"value={calc(x,y,op)}")
+    ch='c'
+    while ch!='q':
+        x=int(input("Enter a number:"))
+        y=int(input("Enter another number:"))
+        op=input("Enter a operation:")
+        print(f"value={calc(x,y,op)}")
+        ch=input("enter c to continue and q to quit:")
 
 def calc(a,b,op):
     if(op=='x'):
@@ -17,5 +20,6 @@ def calc(a,b,op):
        return(a%b)
     else:
        print("invalid")
+       return "NAN"
 
 main()
