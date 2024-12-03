@@ -8,7 +8,11 @@ Repeat this process until n becomes 1.
 Bonus: Count the number of steps taken and display them.
 """
 def main():
-    N=int(input("Enter a Number:"))
+    try:
+        N=int(input("Enter a Number:"))
+    except ValueError:
+        print("x is not an integer")
+        return 
     ch=input("Enter y if you want to know the binary equivalent of your number:")
     if(ch=='y'):
         binary(N)
