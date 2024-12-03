@@ -8,26 +8,32 @@ Repeat this process until n becomes 1.
 Bonus: Count the number of steps taken and display them.
 """
 def main():
-    try:
-        N=int(input("Enter a Number:"))
-    except ValueError:
-        print("x is not an integer")
-    else: 
-        ch=input("Enter y if you want to know the binary equivalent of your number:")
-        if(ch=='y'):
-            binary(N)
-        collatz(N)
+    while True:
+        try:
+            N=int(input("Enter a Number:"))
+        except ValueError:
+            print("x is not an integer")
+        else: 
+            break
+
+    ch=input("Enter y if you want to know the binary equivalent of your number:")
+    if(ch=='y'):
+        binary(N)
+    collatz(N)
 
 def collatz(N):
     x=0
     while(N!=1):
+        x=x+1   
         if(N%2==0):
             N=N//2
-            print(N)
+            print("step",x,":",N)
+           
         else:
             N=N*3+1
-            print(N)
-        x=x+1
+            print("step",x,":",N)
+       
+        
         
     print("total steps taken = ",x)
 
