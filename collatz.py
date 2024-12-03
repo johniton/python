@@ -12,11 +12,11 @@ def main():
         N=int(input("Enter a Number:"))
     except ValueError:
         print("x is not an integer")
-        return 
-    ch=input("Enter y if you want to know the binary equivalent of your number:")
-    if(ch=='y'):
-        binary(N)
-    collatz(N)
+    else: 
+        ch=input("Enter y if you want to know the binary equivalent of your number:")
+        if(ch=='y'):
+            binary(N)
+        collatz(N)
 
 def collatz(N):
     x=0
