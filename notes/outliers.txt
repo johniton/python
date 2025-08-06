@@ -62,7 +62,7 @@ Techniques for outlier detection and removal
 
 3] Percentile 
     Make some threshold percentile like 99percentile and 1percentile and either cap or remove the ones which more than 99percentile and less than 1percentile
-
+    upper and lower limit 
 
 
 
