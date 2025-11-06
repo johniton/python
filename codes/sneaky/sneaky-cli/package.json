@@ -1,0 +1,25 @@
+{
+    "name": "sneaky-cli",
+    "version": "1.0.0",
+    "description": "CLI tool for Gemini with text and image support",
+    "main": "index.js",
+    "bin": {
+        "gemini": "./index.js"
+    },
+    "scripts": {
+        "save-session": "node saveSession.js",
+        "test": "node index.js \"What is AI?\""
+    },
+    "dependencies": {
+        "commander": "^11.0.0",
+        "playwright": "^1.40.0",
+        "mime-types": "^2.1.35"
+    },
+    "keywords": [
+        "gemini",
+        "scraper",
+        "cli"
+    ],
+    "author": "",
+    "license": "MIT"
+}
