@@ -1,5 +1,5 @@
 def main():
-    print("hi")
+    print("hi again")
     ch='c'
     while ch!='q':
         x=int(input("Enter a number:"))
