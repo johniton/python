@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume RAG Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Resume Chatbot</h2>
+
+<input type="file" id="pdf">
+<button onclick="upload()">Upload Resume</button>
+
+<hr>
+
+<input id="question" placeholder="Ask something about the resume">
+<button onclick="ask()">Ask</button>
+
+<pre id="answer"></pre>
+
+<script>
+async function upload() {
+  const file = document.getElementById("pdf").files[0];
+  const formData = new FormData();
+  formData.append("file", file);
+
+  await fetch("http://localhost:8000/upload", {
+    method: "POST",
+    body: formData
+  });
+
+  alert("Resume uploaded");
+}
+
+async function ask() {
+  const q = document.getElementById("question").value;
+
+  const res = await fetch("http://localhost:8000/ask", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ question: q })
+  });
+
+  const data = await res.json();
+  document.getElementById("answer").innerText = data.answer;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+# Demo Assets Owned - Asset Manager Chatbot Training Data
+
+## Dataset Overview
+This document contains demo asset data for an Asset Manager Chatbot. The data includes multiple asset categories with realistic details that can be used for training and testing chatbot functionality.
+
+---
+
+## IT EQUIPMENT ASSETS
+
+### Hardware Assets
+
+| Asset ID | Asset Name | Type | Brand | Model | Serial Number | Category | Location | Department | Purchase Date | Purchase Price | Current Value | Condition | Warranty Expiry | Status | Notes |
+|----------|-----------|------|-------|-------|----------------|----------|----------|-----------|---|---|---|---|---|---|---|
+| IT-001 | Desktop Computer | Computer | Dell | OptiPlex 7090 | 9X8K5L2 | IT Equipment | Office A | IT | 2023-03-15 | ₹85,000 | ₹68,000 | Good | 2026-03-15 | Active | i7 processor, 16GB RAM |
+| IT-002 | Laptop | Laptop | Lenovo | ThinkPad X1 | 7G9K2M4 | IT Equipment | Office B | Sales | 2022-08-20 | ₹95,000 | ₹57,000 | Fair | 2025-08-20 | Active | SSD upgraded |
+| IT-003 | Desktop Computer | Computer | HP | EliteDesk 800 | 5H3J6N8 | IT Equipment | Office C | HR | 2023-11-10 | ₹72,000 | ₹64,800 | Excellent | 2026-11-10 | Active | Recently serviced |
+| IT-004 | Monitor | Peripheral | LG | 27UP550 | 2K4L8P1 | IT Equipment | Office A | IT | 2023-02-05 | ₹28,000 | ₹22,400 | Good | 2026-02-05 | Active | 4K Display |
+| IT-005 | Monitor | Peripheral | Dell | U2720Q | 4M6Q9S3 | IT Equipment | Office B | Sales | 2022-12-18 | ₹32,000 | ₹19,200 | Fair | 2025-12-18 | Active | Some dead pixels |
+| IT-006 | Keyboard | Peripheral | Logitech | MX Keys | 6T5U2V7 | IT Equipment | Office A | IT | 2023-05-22 | ₹12,000 | ₹10,200 | Good | 2026-05-22 | Active | Mechanical switches |
+| IT-007 | Mouse | Peripheral | Razer | DeathAdder | 8W4X1Y9 | IT Equipment | Office B | IT | 2023-01-10 | ₹5,500 | ₹4,400 | Good | 2026-01-10 | Active | RGB Gaming |
+| IT-008 | Printer | Peripheral | HP | LaserJet Pro | 3C5D7E2 | IT Equipment | Office C | HR | 2022-09-30 | ₹35,000 | ₹17,500 | Fair | 2025-09-30 | Active | High page count |
+| IT-009 | Router | Network | Cisco | Catalyst 2960 | 1F2G3H4 | IT Equipment | Server Room | IT | 2023-04-12 | ₹42,000 | ₹33,600 | Excellent | 2026-04-12 | Active | Core networking |
+| IT-010 | Server | Computer | Dell | PowerEdge R750 | 5J8K2L6 | IT Equipment | Server Room | IT | 2023-07-08 | ₹320,000 | ₹256,000 | Excellent | 2026-07-08 | Active | 2U Rack mount |
+
+### Software Assets
+
+| Asset ID | Asset Name | License Type | Vendor | Install Date | Expiration Date | Assigned To | Number of Seats | Category | Cost | Status | Notes |
+|----------|-----------|--------------|--------|---|---|---|---|---|---|---|---|
+| SW-001 | Microsoft Office 365 | Cloud Subscription | Microsoft | 2023-01-01 | 2026-12-31 | All Employees | 25 | Software | ₹500/month | Active | Email + Productivity |
+| SW-002 | Adobe Creative Cloud | Subscription | Adobe | 2023-06-15 | 2026-06-14 | Design Team | 5 | Software | ₹800/month | Active | Photoshop, Illustrator |
+| SW-003 | Slack | SaaS | Slack | 2022-03-01 | 2026-02-28 | All Employees | 20 | Software | ₹350/month | Active | Team collaboration |
+| SW-004 | Jira | Cloud License | Atlassian | 2023-02-10 | 2026-02-09 | Development | 10 | Software | ₹1,200/month | Active | Project management |
+| SW-005 | Zoom | Business Plan | Zoom | 2023-04-01 | 2026-03-31 | All Employees | 1 | Software | ₹200/month | Active | Video conferencing |
+
+---
+
+## OFFICE EQUIPMENT ASSETS
+
+| Asset ID | Asset Name | Type | Brand | Model | Serial Number | Location | Department | Purchase Date | Purchase Price | Current Value | Condition | Status | Notes |
+|----------|-----------|------|-------|-------|----------------|----------|-----------|---|---|---|---|---|---|
+| OF-001 | Office Chair | Furniture | Herman Miller | Aeron | 8G3K2M5 | Office A | IT | 2023-01-20 | ₹45,000 | ₹40,500 | Excellent | Active | Ergonomic |
+| OF-002 | Desk | Furniture | IKEA | Bekant | 4J5L2N8 | Office B | Sales | 2022-11-15 | ₹18,000 | ₹10,800 | Good | Active | Standing desk |
+| OF-003 | Meeting Table | Furniture | Steelcase | Conference | 6P8Q1R3 | Conference Room | All | 2023-03-10 | ₹95,000 | ₹85,500 | Excellent | Active | Seats 12 people |
+| OF-004 | Whiteboard | Supplies | Ghent | Magnetic | 2S4T6U1 | Office A | IT | 2023-02-05 | ₹8,000 | ₹7,200 | Good | Active | 4x8 feet |
+| OF-005 | Projector | Electronics | Sony | VPL-PHZ10 | 5V7W2X9 | Conference Room | All | 2023-05-20 | ₹180,000 | ₹162,000 | Excellent | Active | 5000 lumens |
+| OF-006 | Water Cooler | Appliance | Aquaguard | Ultima | 3Y1Z4A6 | Kitchen | All | 2022-08-10 | ₹25,000 | ₹12,500 | Fair | Active | Needs servicing |
+| OF-007 | Coffee Machine | Appliance | Philips | 3100 | 7B2C5D8 | Kitchen | All | 2023-04-15 | ₹22,000 | ₹19,800 | Good | Active | Commercial grade |
+| OF-008 | Bookshelf | Furniture | Godrej | Steel | 1E3F6G9 | Office C | HR | 2023-02-28 | ₹12,000 | ₹10,800 | Good | Active | 5-tier |
+
+---
+
+## VEHICLE ASSETS
+
+| Asset ID | Vehicle Name | Type | Brand | Model | License Plate | Year | Mileage (km) | Purchase Date | Purchase Price | Current Value | Condition | Status | Assigned To | Insurance Expiry | Notes |
+|----------|-------------|------|-------|-------|---|---|---|---|---|---|---|---|---|---|---|
+| VH-001 | Office Van | Van | Maruti | Eeco | DL01AB1234 | 2022 | 45,000 | 2022-06-10 | ₹550,000 | ₹385,000 | Good | Active | Fleet Manager | 2025-06-10 | 7-seater |
+| VH-002 | Sales Car 1 | Sedan | Hyundai | Verna | HR26CD5678 | 2023 | 32,000 | 2023-02-15 | ₹850,000 | ₹680,000 | Excellent | Active | Sales Lead | 2026-02-15 | Regular maintenance |
+| VH-003 | Sales Car 2 | Sedan | Maruti | Swift | KA01EF9012 | 2021 | 78,500 | 2021-08-20 | ₹620,000 | ₹310,000 | Fair | Active | Sales Rep | 2025-08-20 | High mileage |
+| VH-004 | Delivery Van | Van | Mahindra | Bolero Pickup | MH02GH3456 | 2022 | 92,000 | 2022-11-05 | ₹680,000 | ₹408,000 | Fair | Active | Delivery Team | 2025-11-05 | Used for logistics |
+| VH-005 | Executive Car | SUV | Toyota | Fortuner | AP23IJ7890 | 2023 | 28,000 | 2023-05-12 | ₹2,800,000 | ₹2,380,000 | Excellent | Active | Director | 2026-05-12 | Premium vehicle |
+
+---
+
+## MACHINERY & EQUIPMENT ASSETS
+
+| Asset ID | Equipment Name | Type | Brand | Model | Serial Number | Location | Department | Purchase Date | Purchase Price | Current Value | Condition | Status | Last Serviced | Notes |
+|----------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| MC-001 | Photocopier | Machine | Xerox | WorkCentre 5330 | 4K6L8M2 | Office A | Admin | 2022-04-10 | ₹180,000 | ₹90,000 | Fair | Active | 2025-12-15 | High page count |
+| MC-002 | Industrial Printer | Machine | Canon | imagePRESS C670 | 5N7P2Q9 | Office C | Ops | 2023-03-20 | ₹850,000 | ₹680,000 | Excellent | Active | 2025-11-20 | Maintenance contract active |
+| MC-003 | HVAC Unit | Machine | Daikin | Inverter | 6R3S5T1 | Building A | Facility | 2021-09-15 | ₹185,000 | ₹92,500 | Good | Active | 2025-12-10 | Cooling capacity 2 tons |
+| MC-004 | Backup Generator | Machine | Cummins | 50 kVA | 7U4V8W3 | Basement | Facility | 2023-02-01 | ₹320,000 | ₹288,000 | Excellent | Active | 2025-11-30 | Diesel fueled |
+| MC-005 | Security Safe | Machine | Godrej | Gold | 2X6Y1Z4 | Office D | Finance | 2020-12-10 | ₹95,000 | ₹38,000 | Good | Active | 2025-12-01 | Double lock system |
+
+---
+
+## MISCELLANEOUS ASSETS
+
+| Asset ID | Asset Name | Type | Category | Location | Department | Purchase Date | Purchase Price | Current Value | Condition | Status | Quantity | Notes |
+|----------|-----------|------|----------|----------|-----------|---|---|---|---|---|---|---|
+| MS-001 | Fire Extinguisher | Safety | Safety Equipment | Office A | All | 2023-01-15 | ₹2,500 | ₹2,000 | Good | Active | 5 | 2kg CO2 |
+| MS-002 | First Aid Kit | Safety | Safety Equipment | Office B | All | 2023-02-20 | ₹3,000 | ₹2,400 | Good | Active | 3 | Complete medical supplies |
+| MS-003 | Door Lock | Hardware | Security | Office Doors | Facility | 2022-06-10 | ₹1,500 | ₹750 | Fair | Active | 8 | Electronic locks |
+| MS-004 | CCTV Camera | Hardware | Security | Building Entrance | Facility | 2023-04-05 | ₹12,000 | ₹10,800 | Excellent | Active | 6 | 4MP resolution |
+| MS-005 | Biometric Lock | Hardware | Security | Main Entry | Facility | 2023-05-10 | ₹28,000 | ₹25,200 | Excellent | Active | 1 | Fingerprint scanner |
+
+---
+
+## ASSET DEPRECIATION SCHEDULE
+
+### Depreciation Rules by Category
+- **IT Equipment**: 25% per year (5-year useful life)
+- **Office Furniture**: 10% per year (10-year useful life)
+- **Vehicles**: 15% per year (7-year useful life)
+- **Machinery**: 20% per year (5-year useful life)
+- **Software**: 33.33% per year (3-year useful life)
+
+---
+
+## ASSET LOCATIONS
+
+| Location Code | Location Name | Address | Building | Floor | Capacity |
+|---|---|---|---|---|---|
+| L-001 | Office A | Block A, 1st Floor | Main Building | 1 | 40 persons |
+| L-002 | Office B | Block B, 2nd Floor | Main Building | 2 | 35 persons |
+| L-003 | Office C | Block C, 3rd Floor | Main Building | 3 | 30 persons |
+| L-004 | Office D | Extension Wing, 1st Floor | Extension | 1 | 25 persons |
+| L-005 | Conference Room | Block A, 2nd Floor | Main Building | 2 | 20 persons |
+| L-006 | Server Room | Basement | Main Building | B | 10 persons |
+| L-007 | Kitchen | Block C, Ground Floor | Main Building | 0 | 50 persons |
+| L-008 | Building A | Warehouse Area | Warehouse | 1 | 100 persons |
+| L-009 | Basement | Below Ground | Main Building | B | 20 persons |
+
+---
+
+## ASSET DEPARTMENTS
+
+| Dept ID | Department Name | Manager | Contact | Budget Allocation |
+|---|---|---|---|---|
+| D-001 | IT | Rajesh Kumar | rajesh.kumar@company.com | ₹5,00,000 |
+| D-002 | Sales | Priya Singh | priya.singh@company.com | ₹3,50,000 |
+| D-003 | HR | Amit Patel | amit.patel@company.com | ₹1,50,000 |
+| D-004 | Operations | Vikram Rao | vikram.rao@company.com | ₹2,00,000 |
+| D-005 | Facility Management | Suresh Kumar | suresh.kumar@company.com | ₹4,00,000 |
+| D-006 | Finance | Anjali Verma | anjali.verma@company.com | ₹1,00,000 |
+| D-007 | Design | Arjun Singh | arjun.singh@company.com | ₹2,50,000 |
+
+---
+
+## ASSET CONDITIONS & STATUS LEGEND
+
+### Condition Codes
+- **Excellent**: Like new, fully functional, no wear
+- **Good**: Functional, minimal wear, performs as expected
+- **Fair**: Functional but shows signs of wear, may need repairs soon
+- **Poor**: Needs immediate repairs, limited functionality
+- **Damaged**: Non-functional, requires major repairs or replacement
+
+### Status Codes
+- **Active**: In use
+- **Inactive**: Not in use but serviceable
+- **Maintenance**: Currently being serviced
+- **Retired**: No longer in use
+- **Disposed**: Removed from inventory
+
+---
+
+## TOTAL ASSET VALUE SUMMARY
+
+| Category | Count | Total Value | Average Value |
+|----------|-------|-------------|---|
+| IT Equipment (Hardware) | 10 | ₹11,76,400 | ₹1,17,640 |
+| IT Equipment (Software) | 5 | Subscription | Variable |
+| Office Equipment | 8 | ₹4,86,700 | ₹60,837 |
+| Vehicles | 5 | ₹18,43,000 | ₹3,68,600 |
+| Machinery & Equipment | 5 | ₹22,30,500 | ₹4,46,100 |
+| Miscellaneous | 5 | ₹59,050 | ₹11,810 |
+| **TOTAL** | **38** | **₹58,95,650** | **₹1,55,150** |
+
+---
+
+## DATA EXPORT NOTES FOR CHATBOT
+
+This dataset is structured to be used with your asset manager chatbot. You can:
+
+1. **Import into your database**: Use the tables above as CSV or JSON format
+2. **Train NLP models**: The asset names, categories, and properties can train entity recognition
+3. **Test queries**: Create sample questions like:
+   - "What is the condition of asset IT-001?"
+   - "Where is the projector located?"
+   - "List all assets in Office A"
+   - "What's the total value of IT equipment?"
+   - "Which assets need servicing?"
+
+4. **Sample chatbot interactions**:
+   - User: "Show me all active laptops"
+     Bot: "Found 1 laptop: IT-002 (Lenovo ThinkPad X1) in Office B, Fair condition"
+   
+   - User: "What vehicles do we have?"
+     Bot: "We have 5 vehicles: 2 Sedans, 2 Vans, 1 SUV. Total fleet value: ₹18,43,000"
+   
+   - User: "When does IT equipment warranty expire?"
+     Bot: "All IT hardware warranties are active until 2026. Earliest expiry: 2025-08-20"
+
+---
+
+**Generated**: January 2026
+**For**: Asset Manager Chatbot Training & Testing
+**Data Freshness**: Realistic snapshot of organizational assets

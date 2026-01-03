@@ -1,0 +1,26 @@
+# Python environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Sensitive Information (API Keys, Database URLs)
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Project-specific (Database/Indices)
+# If you are using a local vector store like ChromaDB or FAISS, 
+# you might want to ignore the local database folder:
+db/
+vector_store/
+
+# Logs
+*.log

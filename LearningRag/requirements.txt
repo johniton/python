@@ -1,0 +1,32 @@
+fastapi
+uvicorn
+pydantic
+
+langchain-core
+langchain-huggingface
+huggingface-hub
+
+
+# --- Web Framework ---
+fastapi
+uvicorn
+
+# --- Data Validation ---
+pydantic
+python-dotenv
+
+# --- LangChain Core (NO full langchain meta package) ---
+langchain-core
+langchain-huggingface
+
+# --- Hugging Face (remote inference only) ---
+huggingface-hub
+
+# --- Vector Database ---
+pinecone-client
+
+# --- Embeddings (CPU-only, fast) ---
+sentence-transformers
+
+# --- Text Processing ---
+tqdm

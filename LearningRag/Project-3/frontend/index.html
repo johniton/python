@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal Asset RAG Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button:disabled {
+      background: #9ca3af;
+    }
+
+    pre {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 15px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .sources {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #374151;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📊 Personal Asset Manager – RAG Chatbot</h1>
+
+  <!-- Upload Section -->
+  <div class="box">
+    <h2>1️⃣ Upload Documents</h2>
+
+    <input type="file" id="files" multiple />
+    <br />
+    <button onclick="uploadDocs()">Upload & Index</button>
+
+    <div id="uploadStatus" class="status"></div>
+  </div>
+
+  <!-- Chat Section -->
+  <div class="box">
+    <h2>2️⃣ Ask Questions</h2>
+
+    <input
+      type="text"
+      id="question"
+      placeholder="Ask something like: What is a stablecoin?"
+    />
+
+    <button onclick="askQuestion()">Ask</button>
+
+    <h3>Answer</h3>
+    <pre id="answerBox">Waiting for question...</pre>
+
+    <div class="sources" id="sourcesBox"></div>
+  </div>
+
+  <script>
+    const API_BASE = "http://localhost:8000";
+
+    async function uploadDocs() {
+      const filesInput = document.getElementById("files");
+      const status = document.getElementById("uploadStatus");
+
+      if (!filesInput.files.length) {
+        alert("Please select at least one file.");
+        return;
+      }
+
+      const formData = new FormData();
+      for (const file of filesInput.files) {
+        formData.append("files", file);
+      }
+
+      status.innerText = "⏳ Uploading and indexing documents...";
+
+      try {
+        const res = await fetch(`${API_BASE}/upload`, {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await res.json();
+        status.innerText = "✅ Documents indexed. You can start chatting.";
+      } catch (err) {
+        status.innerText = "❌ Upload failed.";
+        console.error(err);
+      }
+    }
+
+    async function askQuestion() {
+      const questionInput = document.getElementById("question");
+      const answerBox = document.getElementById("answerBox");
+      const sourcesBox = document.getElementById("sourcesBox");
+
+      const question = questionInput.value.trim();
+      if (!question) {
+        alert("Please enter a question.");
+        return;
+      }
+
+      answerBox.innerText = "⏳ Thinking...";
+      sourcesBox.innerText = "";
+
+      try {
+        const res = await fetch(`${API_BASE}/chat`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ question }),
+        });
+
+        const data = await res.json();
+
+        answerBox.innerText = data.answer || "No answer returned.";
+
+        if (data.sources && data.sources.length > 0) {
+          sourcesBox.innerHTML =
+            "<strong>Sources:</strong><br>" +
+            data.sources
+              .map(
+                (s) =>
+                  `• ${s.document} (chunk ${s.chunk_id})`
+              )
+              .join("<br>");
+        } else {
+          sourcesBox.innerText = "No sources available.";
+        }
+      } catch (err) {
+        answerBox.innerText = "❌ Error while querying.";
+        console.error(err);
+      }
+    }
+  </script>
+
+</body>
+</html>

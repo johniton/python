@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Router LLM Demo</title>
+</head>
+<body>
+
+<h2>Router LLM</h2>
+
+<input id="q" style="width: 400px;" placeholder="Ask a question..." />
+<button onclick="send()">Route</button>
+
+<pre id="output"></pre>
+
+<script>
+async function send() {
+  const q = document.getElementById("q").value;
+
+  const res = await fetch("http://localhost:8000/route", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question: q })
+  });
+
+  const data = await res.json();
+  document.getElementById("output").innerText =
+    JSON.stringify(data, null, 2);
+}
+</script>
+
+</body>
+</html>
